@@ -73,3 +73,8 @@ VoltStation/
 3. Configurez le serveur web pour qu'il pointe vers le répertoire du projet
 4. Testez et remplissez la base de données avec ```node setup_databse.js```
 5. Accédez à l'application dans votre navigateur
+
+Liste des comptes de test (mot de passe : 'Password123')
+sophie.martin@email.com
+thomas.petit@email.com
+jean.dupont@email.com (admin)
