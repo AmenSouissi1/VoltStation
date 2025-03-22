@@ -1,0 +1,207 @@
+/* VoltStation Custom Styles */
+
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #6c757d;
+    --success-color: #198754;
+    --info-color: #0dcaf0;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
+    --volt-green: #4CAF50;
+    --volt-blue: #2196F3;
+    --volt-dark-blue: #0D47A1;
+    --volt-orange: #FF9800;
+    --volt-red: #F44336;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #f4f6f9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.text-volt-green {
+    color: var(--volt-green) !important;
+}
+
+.text-volt-blue {
+    color: var(--volt-blue) !important;
+}
+
+.text-volt-orange {
+    color: var(--volt-orange) !important;
+}
+
+.text-volt-red {
+    color: var(--volt-red) !important;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white !important; /* Force white text color */
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: var(--volt-dark-blue);
+    border-color: var(--volt-dark-blue);
+    color: white !important;
+}
+
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover, .btn-outline-primary:focus {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Cards */
+.card {
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.card-header {
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    font-weight: 600;
+}
+
+/* Status Indicators */
+.status-available {
+    color: var(--volt-green);
+}
+
+.status-in-use {
+    color: var(--volt-orange);
+}
+
+.status-maintenance {
+    color: var(--volt-blue);
+}
+
+.status-out-of-service {
+    color: var(--volt-red);
+}
+
+/* Station Card */
+.station-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.station-card .card-body {
+    flex: 1;
+}
+
+.station-card .station-status {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Charging Station Map */
+#stationMap {
+    height: 400px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Style pour les popups de carte Leaflet */
+.leaflet-popup-content .btn-primary,
+.leaflet-popup-content .btn-sm.btn-primary {
+    color: white !important;
+}
+
+/* Dashboard */
+.dashboard-stats {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.stats-card {
+    padding: 15px;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+}
+
+.stats-card-primary {
+    background-color: var(--primary-color);
+}
+
+.stats-card-success {
+    background-color: var(--success-color);
+}
+
+.stats-card-warning {
+    background-color: var(--warning-color);
+    color: #212529;
+}
+
+.stats-card-danger {
+    background-color: var(--danger-color);
+}
+
+.stats-card .stats-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.stats-card .stats-number {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.stats-card .stats-text {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+/* Station Details Button Fix */
+.btn-sm.btn-primary {
+    color: white !important;
+}
+.btn-sm.btn-primary:hover, .btn-sm.btn-primary:focus {
+    background-color: var(--volt-blue);
+    color: white !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .stats-card {
+        margin-bottom: 15px;
+    }
+    
+    #stationMap {
+        height: 300px;
+    }
+}
